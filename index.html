@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #2b2b2b;
+            color: #f1f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Maintenance Page Styling */
+        .maintenance-container {
+            max-width: 800px;
+            width: 90%;
+            padding: 20px;
+            background: linear-gradient(to right, #0073e6, #4a00e0);
+            border-radius: 20px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .maintenance-content {
+            margin: 20px auto;
+        }
+
+        .maintenance-icon {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+            animation: rotate 3s linear infinite;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        .estimated-time {
+            font-weight: bold;
+            color: #f8f000;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .maintenance-container {
+                padding: 15px;
+            }
+        }
+
+        /* Icon Rotate Animation */
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maintenance-container">
+        <div class="maintenance-content">
+            <img src="index 3.png" alt="Maintenance Icon" class="maintenance-icon">
+            <h1>Unable To Connect To Network!</h1>
+            <p>
+               They seems to be a problem while loading this page Please check back later.
+                We appreciate your patience and apologize for the inconvenience.
+            </p>
+            <p class="estimated-time">Estimated Time: 24 Hours</p>
+        </div>
+    </div>
+</body>
+
+</html>
